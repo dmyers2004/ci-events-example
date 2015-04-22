@@ -1,0 +1,12 @@
+SetEnv MODE TEST
+
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php/$1 [L]
