@@ -48,6 +48,16 @@ class some_random_lib {
 		},-999);
 
 		
+		$ci->event->register('orders',function(&$a) { $a .= ' add "100"'; },100);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "-100"'; },-100);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "23"'; },23);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "-23"'; },-23);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "0"'; },0);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "10"'; },10);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "-17"'; },-17);
+		$ci->event->register('orders',function(&$a) { $a .= ' add "23"'; },23);
+		
+		
 		/*
 		if you don't set a priority then it is set to 0
 		and the events are triggered in 

@@ -61,7 +61,15 @@ class Welcome extends CI_Controller {
 		
 		/* now send it out to the view so you can see what we got! */		
 		$this->load->view('input',['input'=>$c]);
-	}	
+	}
+	
+	public function orders() {
+		$input = 'start with controller add';
+	
+		$this->event->trigger('orders',$input);
+	
+		$this->load->view('input',['input'=>$input]);
+	}
 
 	
 } /* end class */

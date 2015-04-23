@@ -18,6 +18,9 @@
 			<a href="/welcome/math">Math Boom Example</a> /welcome/math
 		</p>
 		<p>
+			<a href="/welcome/orders">Order Example</a> /welcome/orders
+		</p>
+		<p>
 			Files included:
 			<ul>
 				<li>Changes to: /application/controllers/Welcome.php (example to trigger events)</li>
