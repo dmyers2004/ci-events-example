@@ -8,16 +8,17 @@ but, I figured this could be used as is now.
 
 It includes the following methods:
 
+::
 
-public register($name,$closure,$priority=0);
+ public register($name,$closure,$priority=0);
 
-public trigger($name,&$a=null,&$b=null,&$c=null,&$d=null,&$e=null,&$f=null,&$g=null,&$h=null);
+ public trigger($name,&$a=null,&$b=null,&$c=null,&$d=null,&$e=null,&$f=null,&$g=null,&$h=null);
 
-public has_event($name);
+ public has_event($name);
 
-public events();
+ public events();
 
-public clear();
+ public clear();
  
  
 Changes to: /application/controllers/Welcome.php (example to trigger events)
