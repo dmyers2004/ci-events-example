@@ -63,6 +63,11 @@ class some_random_lib {
 		and the events are triggered in 
 		the order they are registered
 		*/
-	}
+		
+		$ci->event->register('user.login',function(&$user_name,&$user_id,&$user_email) {
+			$user_name = $user_id.' '.$user_email;
+		});
+		
+	} /* end __construct() */
 
 } /* end class */

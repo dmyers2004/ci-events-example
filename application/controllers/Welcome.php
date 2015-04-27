@@ -70,6 +70,24 @@ class Welcome extends CI_Controller {
 	
 		$this->load->view('input',['input'=>$input]);
 	}
+	
+	public function new_example() {
+		$user_name = 'Don Myers';
+		$user_id = 685;
+		$user_email = 'drpepper@example.com';
+	
+		$this->event->trigger('user.login',$user_name,$user_id,$user_email);
+	
+		$this->load->view('input',['input'=>$user_name]);
+	}
+
+	public function new_example_missing_args_no_error() {
+		$user_name = 'Don Myers';
+	
+		$this->event->trigger('user.login',$user_name);
+	
+		$this->load->view('input',['input'=>$user_name]);
+	}
 
 	
 } /* end class */

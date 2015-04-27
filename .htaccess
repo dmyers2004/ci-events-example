@@ -1,4 +1,4 @@
-SetEnv MODE TEST
+SetEnv ENVIRONMENT development
 
 Options +FollowSymLinks
 

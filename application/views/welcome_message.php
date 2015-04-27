@@ -21,6 +21,12 @@
 			<a href="/welcome/orders">Order Example</a> /welcome/orders
 		</p>
 		<p>
+			<a href="/welcome/new_example">New Example</a> /welcome/new_example
+		</p>
+		<p>
+			<a href="/welcome/new_example_missing_args_no_error">New Example Missing Args No Error</a> /welcome/new_example_missing_args_no_error
+		</p>
+		<p>
 			Files included:
 			<ul>
 				<li>Changes to: /application/controllers/Welcome.php (example to trigger events)</li>
